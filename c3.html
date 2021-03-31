@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 3</title>
+</head>
+<body>
+    <script>
+        function isFibonacci(int) {
+              let num1 = 0
+              let num2 = 1
+              let bucket
+                while (num1 < int) {
+                    bucket = num2
+                    num2 += num1
+                    num1 = bucket
+                }
+              if(int == num1 || int == num2){
+                  return true
+              }
+              return false
+        }
+
+        
+        console.log(isFibonacci(144))
+    </script>
+</body>
+</html>

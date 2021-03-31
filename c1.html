@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 1</title>
+</head>
+<body>
+    <script>
+        function findMax(scores) {
+            let max = scores[0];
+            for (let i = 0; i < scores.length; i++) {
+                if (scores[i] > max) {
+                    max = scores[i];
+                }
+            }
+            return max;
+        }
+
+        console.log(findMax([-5, 0, 1, 2, 4, 5, 10]));
+    </script>
+</body>
+</html>
